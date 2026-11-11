@@ -3,32 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Get to know Yuhan Hu, an industrial designer.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>About Me · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work">Work</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell about-page">
+    <section class="about-intro" aria-labelledby="about-name">
+      <img class="portrait" src="assets/yuhan-portrait.webp" width="476" height="491"
+           alt="Yuhan Hu in front of a display of colorful lights.">
+      <div class="about-copy">
+        <p class="mono about-kicker">About Me</p>
+        <h1 id="about-name">Hi, I’m Yuhan.</h1>
+        <p>I also go by Yvonne. I’m pursuing a Master of Industrial Design at Georgia Tech. I studied industrial design at Pratt Institute, where I also studied psychology and UI/UX design.</p>
+        <p>I’m curious about how physical objects shape the way we interact with technology. My work moves between research, sketching, and hands-on prototyping, from musical instruments to products for everyday routines.</p>
+      </div>
+    </section>
+    <section class="journey" aria-labelledby="journey-title">
+      <div class="journey-heading">
+        <h2 id="journey-title">My journey</h2>
+        <p>Places I’ve lived, studied, and worked.</p>
+      </div>
+      <div class="journey-map">
+        <svg viewBox="0 0 1000 470" role="img" aria-labelledby="journey-map-title journey-map-description">
+          <title id="journey-map-title">My journey from Hangzhou to Atlanta</title>
+          <desc id="journey-map-description">A Pacific-centered world map connecting the eight stops on my timeline across China and the United States.</desc>
+          <image href="assets/journey-land.svg" width="1000" height="470"/>
+          <path class="journey-route is-visited" data-leg="1" d="M378.4,135L395,95.6L405,77.8L416.5,61.5L429.8,47.1L446.1,35.2L456.1,30.3L468.5,26.2L484.3,23.1L505.3,20.9L563.1,19.7L615.4,22.7L634.3,25.7L649.9,29.6L676.1,39.9L698.6,52.9L718.7,68.1L736.6,85.1L752.6,103.5"/>
+          <path class="journey-route is-visited" data-leg="2" d="M752.6,103.5L739.4,86.3L724.7,70.2L708.4,55.6L690.6,42.6L671,31.8L647.7,23.6L632.5,20.6L611.6,18.4L538.4,16.8L472.1,18.9L454.8,21.3L442.8,24.5L425.9,33.1L413.1,44.2L402.1,57.4L392.4,72.3L376.2,105.9"/>
+          <path class="journey-route is-visited" data-leg="3" d="M376.2,105.9L392.4,72.3L402.1,57.4L413.1,44.2L425.9,33.1L442.8,24.5L454.8,21.3L472.1,18.9L538.4,16.8L611.6,18.4L632.5,20.6L647.7,23.6L671,31.8L690.6,42.6L708.4,55.6L724.7,70.2L739.4,86.3L752.6,103.5"/>
+          <path class="journey-route is-visited" data-leg="4" d="M752.6,103.5L739.4,86.3L724.7,70.2L708.4,55.6L690.6,42.6L671,31.8L647.7,23.6L632.5,20.6L611.6,18.4L538.4,16.8L472.1,18.9L454.8,21.3L442.8,24.5L425.9,33.1L413.1,44.2L402.1,57.4L392.4,72.3L376.2,105.9"/>
+          <path class="journey-route is-visited" data-leg="5" d="M376.2,105.9L392.4,72.3L402.1,57.4L413.1,44.2L425.9,33.1L442.8,24.5L454.8,21.3L472.1,18.9L538.4,16.8L611.6,18.4L632.5,20.6L647.7,23.6L671,31.8L690.6,42.6L708.4,55.6L724.7,70.2L739.4,86.3L752.6,103.5"/>
+          <path class="journey-route is-visited" data-leg="6" d="M752.6,103.5L736.6,85.1L718.7,68.1L698.6,52.9L676.1,39.9L649.9,29.6L634.3,25.7L615.4,22.7L563.1,19.7L505.3,20.9L484.3,23.1L468.5,26.2L456.1,30.3L446.1,35.2L429.8,47.1L416.5,61.5L405,77.8L395,95.6L378.4,135"/>
+          <path class="journey-route is-current" data-leg="7" d="M378.4,135L389.7,115.3L402.3,96.7L416.5,79.6L432.6,64.4L451.3,51.5L473.7,41.3L501.5,34.5L535.3,31.4L571.7,32.3L605.6,37.2L635,45.7L660.7,57.3L683.6,71.3L704.2,87.4L722.6,105.2L739,124.4"/>
+          <g class="journey-city is-visited" data-city="hangzhou" transform="translate(378.4 135.0)">
+            <circle class="city-halo" r="12"/>
+            <circle class="city-dot" r="5.5"/>
+            <text x="-15" y="24" text-anchor="end">Hangzhou</text>
+          </g>
+          <g class="journey-city is-visited" data-city="beijing" transform="translate(376.2 105.9)">
+            <circle class="city-halo" r="12"/>
+            <circle class="city-dot" r="5.5"/>
+            <text x="-15" y="-12" text-anchor="end">Beijing</text>
+          </g>
+          <g class="journey-city is-visited" data-city="new-york" transform="translate(752.6 103.5)">
+            <circle class="city-halo" r="12"/>
+            <circle class="city-dot" r="5.5"/>
+            <text x="15" y="-10" text-anchor="start">New York</text>
+          </g>
+          <g class="journey-city is-current" data-city="atlanta" transform="translate(739.0 124.4)">
+            <circle class="city-halo" r="12"/>
+            <circle class="city-dot" r="5.5"/>
+            <text x="15" y="25" text-anchor="start">Atlanta</text>
+          </g>
+        </svg>
+      </div>
+      <div class="journey-controls" id="journey-controls" hidden>
+        <div class="journey-control-label">
+          <label for="journey-time" class="mono">Timeline</label>
+          <span class="mono" id="journey-count" aria-hidden="true">08 / 08</span>
+        </div>
+        <input type="range" id="journey-time" min="0" max="7" value="7" step="1">
+        <div class="journey-ticks" id="journey-ticks"></div>
+      </div>
+      <div class="journey-current" id="journey-current" aria-live="polite">
+        <div>
+          <p class="mono" id="journey-date">August 2025 – Present</p>
+          <h3 id="journey-city">Atlanta</h3>
+        </div>
+        <p id="journey-note">Started my Master of Industrial Design at Georgia Tech.</p>
+      </div>
+      <noscript>
+        <p>Hangzhou → New York → Beijing → New York → Beijing → New York → Hangzhou → Atlanta</p>
+      </noscript>
+      <p class="journey-credit">
+        <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Map data from Natural Earth</a>
+      </p>
+    </section>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="journey.js" defer></script>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

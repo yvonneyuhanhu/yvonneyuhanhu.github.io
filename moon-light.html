@@ -3,32 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A lamp that rotates to recreate the current phase of the moon.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>Moon Light · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work" aria-current="true">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell">
+    <div class="detail-head">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <div class="detail-title">
+        <h1>Moon Light</h1>
+        <div class="detail-meta">
+          <p>Lighting design · 2022</p>
+          <p>Product Designer &amp; Lighting Designer</p>
+        </div>
+        <p class="project-overview">A lamp that rotates to recreate the current phase of the moon.</p>
+        <ul class="tags" aria-label="Project focus"><li>Lighting</li><li>Interaction</li><li>Experience design</li></ul>
+        <a class="intro-link" href="#process">View full process <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="pdf-pages case-study" id="process">
+      <figure class="case-portrait">
+        <a href="assets/projects/moon-light/01.webp" target="_blank" rel="noopener" aria-label="Open Moon Light at full size">
+          <img src="assets/projects/moon-light/01.webp" width="1920" height="2560" alt="Moon Light" fetchpriority="high">
+        </a>
+      </figure>
+      <section class="case-section">
+        <h2>Project Overview</h2>
+        <p>Inspired by the line &quot;A bright moon rises over the sea; we share this moment though far apart,&quot; this moon lamp physically rotates to mirror the real-time shape of the moon. Even on cloudy nights, it allows people in different places to see the same moon, transforming a distant celestial event into a shared, intimate moment of connection</p>
+      </section>
+      <section class="case-section">
+        <h2>Design Concept</h2>
+        <h3>Shared Moments Across Distance</h3>
+        <p>Inspired by the ancient Chinese poem &quot;A bright moon rises over the sea; we share this moment though far apart,&quot; Moon Light creates a tangible connection between people separated by distance.</p>
+        <p>The lamp physically rotates to mirror the real-time phase of the moon, allowing loved ones in different locations to experience the same lunar beauty simultaneously.</p>
+        <h3>Bringing the Cosmos Home</h3>
+        <p>Even on cloudy nights when the moon is hidden from view, Moon Light ensures you never miss its cycle. The lamp becomes a window to the cosmos in your living space.</p>
+        <p>By transforming a distant celestial event into an intimate, shared moment, Moon Light bridges the gap between the astronomical and the personal.</p>
+      </section>
+      <section class="case-section">
+        <h2>Design Process</h2>
+        <p>The design process involved extensive exploration of form, mechanism, and materiality. We experimented with various prototypes to achieve the perfect balance between aesthetic beauty and functional accuracy.</p>
+        <figure>
+          <a href="assets/projects/moon-light/02.webp" target="_blank" rel="noopener" aria-label="Open Moon Light Design Process at full size">
+            <img src="assets/projects/moon-light/02.webp" width="1920" height="1080" alt="Moon Light Design Process" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Form Exploration</h3>
+        <p>Multiple design iterations explored different ways to frame the rotating moon element. From minimalist stands to sculptural bases, each prototype was tested for visual balance and mechanical stability.</p>
+        <h3>Material Studies</h3>
+        <p>Based the all white challenge, foamcore is my first choice of the material.</p>
+      </section>
+      <section class="case-section">
+        <h2>Lunar Phases in Motion</h2>
+        <figure>
+          <a href="assets/projects/moon-light/03.webp" target="_blank" rel="noopener" aria-label="Open Moon Light Phases at full size">
+            <img src="assets/projects/moon-light/03.webp" width="1920" height="1080" alt="Moon Light Phases" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Real-Time Synchronization</h3>
+        <p>The lamp connects to lunar phase data and automatically rotates to display the current moon phase. The top row shows the astronomical phases, while the bottom row demonstrates how the lamp recreates each phase through its rotating mechanism.</p>
+        <h3>Poetic Illumination</h3>
+        <p>From the delicate crescent to the full moon&#x27;s radiance, each phase is beautifully rendered through the interplay of light and shadow. The warm glow creates an intimate atmosphere that transforms any space.</p>
+      </section>
+      <section class="case-section">
+        <h2>Technical Features</h2>
+        <h3>Automatic Rotation</h3>
+        <p>Silent motor mechanism rotates the moon element to match real-time lunar phases with precision.</p>
+        <h3>Smart Connectivity</h3>
+        <p>Connects to lunar phase databases to ensure accurate representation, updating daily.</p>
+        <h3>Warm LED Lighting</h3>
+        <p>Energy-efficient LED provides soft, warm illumination that mimics natural moonlight.</p>
+        <h3>Sculptural Design</h3>
+        <p>Elegant geometric form serves as both functional lamp and art piece for any interior.</p>
+      </section>
+      <section class="case-section">
+        <h2>Impact &amp; Future Vision</h2>
+        <p>Moon Light transforms the ancient human connection to lunar cycles into a contemporary design object. It addresses the modern challenge of maintaining emotional connections across distance by providing a shared, tangible experience.</p>
+        <p>Future developments include integrating app connectivity for synchronized experiences with loved ones, customizable rotation speeds, and expanded celestial features such as star phases or planetary movements. The goal is to bring the wonder of the cosmos into everyday life, making astronomy personal and poetic.</p>
+      </section>
+    </div>
+    <nav class="detail-end" aria-label="Project navigation">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+    </nav>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

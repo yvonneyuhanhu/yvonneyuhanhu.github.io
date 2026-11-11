@@ -3,32 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Photography, painting, music, and coffee with Yuhan Hu.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>For Fun · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html" aria-current="page">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell extra-page">
+    <div class="extra-intro">
+      <h1>For Fun</h1>
+      <p>A few things I reach for when I close my sketchbook or step away from CAD.</p>
+    </div>
+    <section class="fun-grid" aria-label="Outside the studio">
+      <article>
+        <span class="mono extra-kicker" aria-hidden="true">01</span>
+        <h2>Photography</h2>
+        <p>I like photographing everyday moments and the design details I notice around the city.</p>
+      </article>
+      <article>
+        <span class="mono extra-kicker" aria-hidden="true">02</span>
+        <h2>Painting</h2>
+        <p>Watercolor and abstract sketches are my favorite ways to take a break from CAD.</p>
+      </article>
+      <article>
+        <span class="mono extra-kicker" aria-hidden="true">03</span>
+        <h2>Music</h2>
+        <p>I play music and make playlists for whatever mood I’m in.</p>
+      </article>
+      <article>
+        <span class="mono extra-kicker" aria-hidden="true">04</span>
+        <h2>Coffee</h2>
+        <p>I enjoy exploring cafés and keeping track of the oat milk lattes I’d order again.</p>
+      </article>
+    </section>
+    <section class="fun-notes" aria-labelledby="fun-notes-title">
+      <h2 id="fun-notes-title">A few little things</h2>
+      <ul>
+        <li>I collect vintage design magazines from thrift stores.</li>
+        <li>I once 3D-printed a cookie cutter shaped like my cat.</li>
+        <li>I’m slowly making my way through design museums around the world.</li>
+      </ul>
+    </section>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

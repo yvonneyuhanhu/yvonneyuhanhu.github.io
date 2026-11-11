@@ -3,32 +3,288 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Industrial design portfolio by Yuhan Hu. Explore selected projects in product design, interaction, and prototyping.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>Yuhan Hu · Industrial Design Portfolio 2027</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="#work" aria-current="page">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell">
+    <section class="intro" aria-labelledby="intro-name">
+      <div class="intro-copy">
+        <h1 id="intro-name"><span class="intro-greeting">Hi, I’m</span> <span class="intro-name">Yuhan Hu.</span></h1>
+        <p>I’m an industrial designer exploring products, interaction, and prototyping.</p>
+        <a class="intro-link" href="#work">View work <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="intro-art">
+        <img src="assets/yuhan-nomos-illustration.webp" width="1254" height="1254"
+             alt="Illustration of Yuhan waving while holding the Nomos instrument she designed."
+             fetchpriority="high">
+      </figure>
+    </section>
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <h2 id="work-title">Work</h2>
+      </div>
+      <div class="project-grid">
+        <a class="project-card" href="nomos.html">
+          <div class="card-image">
+            <img src="assets/covers/nomos.webp" width="1024" height="640" alt="" decoding="async">
+            <span class="mono card-index" aria-hidden="true">01</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>Nomos</h3>
+                <span class="mono card-year">2025</span>
+              </div>
+              <p class="card-category">Modular instrument</p>
+              <p class="card-summary">A modular instrument that translates touch, pressure, and breath into sound.</p>
+              <ul class="tags" aria-label="Project focus"><li>Interaction</li><li>Musical instruments</li><li>Prototyping</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="leafty.html">
+          <div class="card-image">
+            <img src="assets/covers/leafty.webp" width="1024" height="640" alt="" decoding="async">
+            <span class="mono card-index" aria-hidden="true">02</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>Leafty</h3>
+                <span class="mono card-year">2025</span>
+              </div>
+              <p class="card-category">Screen-free breaks</p>
+              <p class="card-summary">A desk companion that encourages screen-free breaks through gentle, physical cues.</p>
+              <ul class="tags" aria-label="Project focus"><li>Behavior design</li><li>Screen-free interaction</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="movision.html">
+          <div class="card-image">
+            <img src="assets/covers/movision.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            <span class="mono card-index" aria-hidden="true">03</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>Movision</h3>
+                <span class="mono card-year">2025</span>
+              </div>
+              <p class="card-category">Smart sports eyewear</p>
+              <p class="card-summary">Modular sports eyewear that captures the action hands-free.</p>
+              <ul class="tags" aria-label="Project focus"><li>Wearables</li><li>Hardware design</li><li>CMF</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="pawse.html">
+          <div class="card-image">
+            <img src="assets/covers/pawse.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            <span class="mono card-index" aria-hidden="true">04</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>Pawse</h3>
+                <span class="mono card-year">2025</span>
+              </div>
+              <p class="card-category">Human–pet–robot interaction</p>
+              <p class="card-summary">A robot that helps people care for, check in on, and play with their pets.</p>
+              <ul class="tags" aria-label="Project focus"><li>Robotics</li><li>User research</li><li>Service design</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="nomadx.html">
+          <div class="card-image">
+            <img src="assets/covers/nomadx.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            <span class="mono card-index" aria-hidden="true">05</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>NomadX</h3>
+                <span class="mono card-year">2024</span>
+              </div>
+              <p class="card-category">Mobile field platform</p>
+              <p class="card-summary">A configurable mobile living and service platform for pastoral communities.</p>
+              <ul class="tags" aria-label="Project focus"><li>Mobility</li><li>Modular systems</li><li>Concept design</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="more-work.html">
+          <div class="card-image">
+            <img src="assets/covers/more-work.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            <span class="mono card-index" aria-hidden="true">06</span>
+          </div>
+          <div class="card-body">
+            <div class="card-copy">
+              <div class="card-heading">
+                <h3>More Work</h3>
+                <span class="mono card-year">Archive</span>
+              </div>
+              <p class="card-category">Additional design and research</p>
+              <p class="card-summary">Selected work in mobile products, vehicle electronics, and prosthetics research.</p>
+              <ul class="tags" aria-label="Project focus"><li>Product design</li><li>Research</li></ul>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+      </div>
+      <section aria-labelledby="earlier-work-title">
+        <div class="section-heading">
+          <h3 id="earlier-work-title">Earlier work</h3>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="afterglow.html">
+            <div class="card-image">
+              <img src="assets/covers/afterglow.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>AfterGlow</h4>
+                  <span class="mono card-year">2025</span>
+                </div>
+                <p class="card-category">Product design</p>
+                <p class="card-summary">A protective face shield for people recovering from aesthetic treatments.</p>
+                <ul class="tags" aria-label="Project focus"><li>Medical aesthetics</li><li>Product research</li><li>Prototyping</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="persistence-of-memory.html">
+            <div class="card-image">
+              <img src="assets/covers/persistence-of-memory.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>The Persistence of Memory</h4>
+                  <span class="mono card-year">2025</span>
+                </div>
+                <p class="card-category">Exhibition design</p>
+                <p class="card-summary">An immersive exhibition that explores the seven sins of memory through surreal, interactive spaces.</p>
+                <ul class="tags" aria-label="Project focus"><li>Exhibition</li><li>Experience design</li><li>Surrealism</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="orashell.html">
+            <div class="card-image">
+              <img src="assets/covers/orashell.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>Orashell</h4>
+                  <span class="mono card-year">2024</span>
+                </div>
+                <p class="card-category">Industrial design</p>
+                <p class="card-summary">A smart denture care system that combines automated cleaning with a companion app.</p>
+                <ul class="tags" aria-label="Project focus"><li>Arduino</li><li>Wellness</li><li>Hygiene</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="serene.html">
+            <div class="card-image">
+              <img src="assets/covers/serene.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>Serene</h4>
+                  <span class="mono card-year">2023</span>
+                </div>
+                <p class="card-category">Cosmetics design</p>
+                <p class="card-summary">Lipstick packaging and a retail display designed for people with visual impairments.</p>
+                <ul class="tags" aria-label="Project focus"><li>Inclusive design</li><li>Packaging</li><li>Visual merchandising</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="hug-gacha.html">
+            <div class="card-image">
+              <img src="assets/covers/hug-gacha.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>Hug - Gacha</h4>
+                  <span class="mono card-year">2023</span>
+                </div>
+                <p class="card-category">UI/UX design</p>
+                <p class="card-summary">A wellness app that pairs voice journaling with personalized feedback and gacha-inspired rewards.</p>
+                <ul class="tags" aria-label="Project focus"><li>Mobile app</li><li>Wellness</li><li>IoT</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="cozynest.html">
+            <div class="card-image">
+              <img src="assets/covers/cozynest.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>CozyNest</h4>
+                  <span class="mono card-year">2022</span>
+                </div>
+                <p class="card-category">Furniture design</p>
+                <p class="card-summary">A floor seat that adapts to different postures and lets people make cushions from their own clothing.</p>
+                <ul class="tags" aria-label="Project focus"><li>Furniture</li><li>Sustainability</li><li>Ergonomics</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" href="moon-light.html">
+            <div class="card-image">
+              <img src="assets/covers/moon-light.webp" width="1024" height="640" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <div class="card-copy">
+                <div class="card-heading">
+                  <h4>Moon Light</h4>
+                  <span class="mono card-year">2022</span>
+                </div>
+                <p class="card-category">Lighting design</p>
+                <p class="card-summary">A lamp that rotates to recreate the current phase of the moon.</p>
+                <ul class="tags" aria-label="Project focus"><li>Lighting</li><li>Interaction</li><li>Experience design</li></ul>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

@@ -3,32 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Get in touch with industrial designer Yuhan Hu.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>Contact · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell extra-page">
+    <div class="extra-intro">
+      <p class="mono extra-kicker">Contact</p>
+      <h1>Let’s chat.</h1>
+      <p>I’d love to hear about design projects, research, and ideas for collaboration.</p>
+    </div>
+    <div class="contact-layout">
+      <form class="contact-form" id="contact-form" action="mailto:yvonneyuhanhu@gmail.com" hidden aria-label="Draft an email to Yuhan Hu">
+        <div class="contact-fields">
+          <label>Your name
+            <input name="name" autocomplete="name" required maxlength="100">
+          </label>
+          <label>Email
+            <input name="email" type="email" autocomplete="email" required maxlength="254">
+          </label>
         </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
+        <label>Message
+          <textarea name="message" rows="5" maxlength="1200" required></textarea>
+        </label>
+        <div class="contact-actions">
+          <button class="button" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
+          <p>Opens a draft in your email app.</p>
+        </div>
       </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+      <aside class="contact-direct" aria-labelledby="contact-direct-title">
+        <h2 id="contact-direct-title">Get in touch</h2>
+        <div>
+          <p class="mono">Email</p>
+          <a href="mailto:yvonneyuhanhu@gmail.com">yvonneyuhanhu@gmail.com</a>
+        </div>
+        <div>
+          <p class="mono">Based in</p>
+          <p>Atlanta, GA</p>
+        </div>
+      </aside>
     </div>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="contact.js" defer></script>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

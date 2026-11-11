@@ -3,32 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A wellness app that pairs voice journaling with personalized feedback and gacha-inspired rewards.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>Hug - Gacha · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work" aria-current="true">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell">
+    <div class="detail-head">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <div class="detail-title">
+        <h1>Hug - Gacha</h1>
+        <div class="detail-meta">
+          <p>UI/UX design · 2023</p>
+          <p>UX/UI Designer</p>
+        </div>
+        <p class="project-overview">A wellness app that pairs voice journaling with personalized feedback and gacha-inspired rewards.</p>
+        <ul class="tags" aria-label="Project focus"><li>Mobile app</li><li>Wellness</li><li>IoT</li></ul>
+        <a class="intro-link" href="#process">View full process <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="pdf-pages case-study" id="process">
+      <figure>
+        <a href="assets/projects/hug-gacha/01.webp" target="_blank" rel="noopener" aria-label="Open Hug - Gacha at full size">
+          <img src="assets/projects/hug-gacha/01.webp" width="2560" height="1800" alt="Hug - Gacha" fetchpriority="high">
+        </a>
+      </figure>
+      <section class="case-section">
+        <h2>Project Overview</h2>
+        <p>Hug - Gacha is a mobile wellness app that combines voice journaling with emotional support through a unique gacha-style reward system. Users record their daily emotions and receive personalized gifts and AI-generated advice, creating a playful yet meaningful space for emotional reflection.</p>
+      </section>
+      <section class="case-section">
+        <h2>Problem &amp; Solution</h2>
+        <h3>The Problem</h3>
+        <p>Modern society&#x27;s insufficient emotional support, especially for those dealing with stress and negative emotions, is worsened by increasing pressures from work, study, and daily life. Traditional support like counseling often fails to offer immediate, interactive help.</p>
+        <figure>
+          <a href="assets/projects/hug-gacha/02.webp" target="_blank" rel="noopener" aria-label="Open Emotional support statistics at full size">
+            <img src="assets/projects/hug-gacha/02.webp" width="743" height="362" alt="Emotional support statistics" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <p>Today&#x27;s young people lack of personal space, squeezed by the demands of modern life and constant connectivity. This shortage can exacerbate stress and diminish mental well-being.</p>
+        <figure>
+          <a href="assets/projects/hug-gacha/03.webp" target="_blank" rel="noopener" aria-label="Open Personal space shortage at full size">
+            <img src="assets/projects/hug-gacha/03.webp" width="735" height="302" alt="Personal space shortage" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Research Methods</h3>
+        <figure>
+          <a href="assets/projects/hug-gacha/04.webp" target="_blank" rel="noopener" aria-label="Open Research Methods - Through Research, Online Survey, and Interviews at full size">
+            <img src="assets/projects/hug-gacha/04.webp" width="2236" height="892" alt="Research Methods - Through Research, Online Survey, and Interviews" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Problem Space</h3>
+        <h3>Emotional Disconnect</h3>
+        <p>Users struggle to identify and articulate their emotions, often dismissing stress until it becomes overwhelming.</p>
+        <h3>Lack of Immediate Support</h3>
+        <p>Traditional therapy requires scheduling and commitment, leaving users without immediate emotional outlets during stressful moments.</p>
+        <h3>Low Engagement</h3>
+        <p>Existing wellness apps lack motivation systems, resulting in low user retention and inconsistent usage patterns.</p>
+        <h3>Privacy Concerns</h3>
+        <p>Users fear judgment when sharing emotions, especially in social platforms or group settings.</p>
+        <h3>Primary Persona: Kevin Hedegaard</h3>
+        <figure>
+          <a href="assets/projects/hug-gacha/05.webp" target="_blank" rel="noopener" aria-label="Open Kevin Hedegaard Persona - Biography, Pain Points, and Needs at full size">
+            <img src="assets/projects/hug-gacha/05.webp" width="1860" height="1414" alt="Kevin Hedegaard Persona - Biography, Pain Points, and Needs" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <figure>
+          <a href="assets/projects/hug-gacha/06.webp" target="_blank" rel="noopener" aria-label="Open Non-functional and Functional Requirements at full size">
+            <img src="assets/projects/hug-gacha/06.webp" width="1874" height="920" alt="Non-functional and Functional Requirements" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <p>HOW MIGHT WE HELP USERS UNDERSTAND THE NEGATIVE IMPACTS OF STRESS, CREATE A SUPPORTIVE ENVIRONMENT, MAKE A REASONABLE PLAN, AND MANAGE STRESS EFFECTIVELY?</p>
+        <figure>
+          <a href="assets/projects/hug-gacha/07.webp" target="_blank" rel="noopener" aria-label="Open Ideation - Maybe we can... and Yes! You can exchange your personal Joy Pods at full size">
+            <img src="assets/projects/hug-gacha/07.webp" width="2560" height="1369" alt="Ideation - Maybe we can... and Yes! You can exchange your personal Joy Pods" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+      <section class="case-section">
+        <h2>Wireframe &amp; Design</h2>
+        <h3>System Architecture &amp; User Journey</h3>
+        <p>The design process integrates systematic thinking with empathetic user experience design, combining AI-powered emotional analysis with intuitive interaction flows and physical tactile feedback through Joypods.</p>
+        <figure>
+          <a href="assets/projects/hug-gacha/08.webp" target="_blank" rel="noopener" aria-label="Open Wireframe and Design - System Architecture and User Journey at full size">
+            <img src="assets/projects/hug-gacha/08.webp" width="1920" height="1080" alt="Wireframe and Design - System Architecture and User Journey" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+      <section class="case-section">
+        <h2>Impact &amp; Learning</h2>
+        <h3>User Engagement</h3>
+        <p>The gamified approach successfully encourages daily check-ins, with users reporting higher motivation to maintain their emotional wellness practice.</p>
+        <h3>Emotional Safety</h3>
+        <p>Private, non-judgmental space allows introverts to express themselves freely without social pressure or fear of exposure.</p>
+        <h3>Design Insights</h3>
+        <p>Learned how to balance playful gamification with sensitive emotional content, ensuring the experience remains respectful and supportive.</p>
+      </section>
+      <section class="case-section">
+        <h2>Reflection</h2>
+        <h3>Does It Actually Work?</h3>
+        <figure>
+          <a href="assets/projects/hug-gacha/09.webp" target="_blank" rel="noopener" aria-label="Open Usability Testing - 16 participants, 4 given tasks, overall score 82.9 at full size">
+            <img src="assets/projects/hug-gacha/09.webp" width="1920" height="1080" alt="Usability Testing - 16 participants, 4 given tasks, overall score 82.9" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+    </div>
+    <nav class="detail-end" aria-label="Project navigation">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <a class="button" href="cozynest.html">Next · CozyNest <span aria-hidden="true">→</span></a>
+    </nav>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

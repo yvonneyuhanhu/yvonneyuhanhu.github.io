@@ -3,32 +3,157 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A protective face shield for people recovering from aesthetic treatments.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>AfterGlow · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work" aria-current="true">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell">
+    <div class="detail-head">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <div class="detail-title">
+        <h1>AfterGlow</h1>
+        <div class="detail-meta">
+          <p>Product design · 2025</p>
+          <p>Product Designer &amp; Researcher</p>
+        </div>
+        <p class="project-overview">A protective face shield for people recovering from aesthetic treatments.</p>
+        <ul class="tags" aria-label="Project focus"><li>Medical aesthetics</li><li>Product research</li><li>Prototyping</li></ul>
+        <a class="intro-link" href="#process">View full process <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="pdf-pages case-study" id="process">
+      <figure class="case-portrait">
+        <a href="assets/projects/afterglow/01.webp" target="_blank" rel="noopener" aria-label="Open AfterGlow at full size">
+          <img src="assets/projects/afterglow/01.webp" width="1707" height="2560" alt="AfterGlow" fetchpriority="high">
+        </a>
+      </figure>
+      <section class="case-section">
+        <h2>Market Size</h2>
+        <p>The global medical aesthetics market was valued at USD 82.46 billion in 2023 and is expected to reach USD 143.3 billion by 2030.</p>
+        <p>Rising interest in:</p>
+        <ul><li>non-invasive treatments</li><li>personalized care</li><li>emotional well-being in aesthetic services</li></ul>
+        <figure>
+          <a href="assets/projects/afterglow/02.webp" target="_blank" rel="noopener" aria-label="Open Medical Aesthetics Market Growth Chart at full size">
+            <img src="assets/projects/afterglow/02.webp" width="630" height="420" alt="Medical Aesthetics Market Growth Chart" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+      <section class="case-section">
+        <h2>The Problem</h2>
+        <h3>Post-Procedure Reality</h3>
+        <figure class="case-portrait">
+          <a href="assets/projects/afterglow/03.webp" target="_blank" rel="noopener" aria-label="Open Post-procedure skin condition at full size">
+            <img src="assets/projects/afterglow/03.webp" width="1002" height="1278" alt="Post-procedure skin condition" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <p>After non-invasive aesthetic treatments, patients experience visible redness, sensitivity, and healing scars that require careful protection from sun exposure and physical contact.</p>
+        <h3>Current Solutions Fall Short</h3>
+        <figure class="case-portrait">
+          <a href="assets/projects/afterglow/04.webp" target="_blank" rel="noopener" aria-label="Open Current solution with medical masks at full size">
+            <img src="assets/projects/afterglow/04.webp" width="1402" height="2146" alt="Current solution with medical masks" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <p>Traditional medical masks and hats provide inadequate protection. They trap heat, stick to healing skin, and draw unwanted attention — making recovery both physically uncomfortable and emotionally challenging.</p>
+      </section>
+      <section class="case-section">
+        <h2>Competitors Analysis</h2>
+        <figure>
+          <a href="assets/projects/afterglow/05.webp" target="_blank" rel="noopener" aria-label="Open Competitors Analysis at full size">
+            <img src="assets/projects/afterglow/05.webp" width="2560" height="1438" alt="Competitors Analysis" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+      <section class="case-section">
+        <h2>Research Question</h2>
+        <p>How might we design a face shield that both <strong>protects sensitive post-procedure skin</strong> and <strong>empowers users to feel confident</strong> in social settings during recovery?</p>
+      </section>
+      <section class="case-section">
+        <h2>User Research</h2>
+        <p>From the 67 replies I got from surveys and interviews, I identified key pain points and user needs:</p>
+        <figure>
+          <a href="assets/projects/afterglow/06.webp" target="_blank" rel="noopener" aria-label="Open User Research Insights at full size">
+            <img src="assets/projects/afterglow/06.webp" width="2560" height="1155" alt="User Research Insights" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Persona</h3>
+        <figure>
+          <a href="assets/projects/afterglow/07.webp" target="_blank" rel="noopener" aria-label="Open Stephanie Persona at full size">
+            <img src="assets/projects/afterglow/07.webp" width="1292" height="1204" alt="Stephanie Persona" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <figure>
+          <a href="assets/projects/afterglow/08.webp" target="_blank" rel="noopener" aria-label="Open Kevin Persona at full size">
+            <img src="assets/projects/afterglow/08.webp" width="1292" height="1204" alt="Kevin Persona" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Prototype</h3>
+        <figure>
+          <a href="assets/projects/afterglow/09.webp" target="_blank" rel="noopener" aria-label="Open AfterGlow Prototype at full size">
+            <img src="assets/projects/afterglow/09.webp" width="2560" height="1008" alt="AfterGlow Prototype" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Branding</h3>
+        <figure>
+          <a href="assets/projects/afterglow/10.webp" target="_blank" rel="noopener" aria-label="Open AfterGlow Branding at full size">
+            <img src="assets/projects/afterglow/10.webp" width="2560" height="1251" alt="AfterGlow Branding" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Hero Shot</h3>
+        <figure>
+          <a href="assets/projects/afterglow/11.webp" target="_blank" rel="noopener" aria-label="Open AfterGlow Hero Shot at full size">
+            <img src="assets/projects/afterglow/11.webp" width="2560" height="1198" alt="AfterGlow Hero Shot" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+      <section class="case-section">
+        <h2>Design Principles</h2>
+        <h3>Non-Contact Protection</h3>
+        <p>Shield sensitive post-procedure skin without physical contact, preventing irritation and allowing natural healing.</p>
+        <h3>Breathable Design</h3>
+        <p>Minimize heat buildup to prevent sweating and reduce infection risk during recovery.</p>
+        <h3>Discreet &amp; Confident</h3>
+        <p>Empower users to maintain their daily routines and social interactions with confidence during the healing process.</p>
+        <h3>Sun Protection</h3>
+        <p>Provide effective UV protection to prevent hyperpigmentation and support optimal healing outcomes.</p>
+      </section>
+      <section class="case-section">
+        <h2>Next Steps</h2>
+        <p>The research phase has established a strong foundation for the AfterGlow face shield design. Moving forward, the project will focus on:</p>
+        <figure>
+          <a href="assets/projects/afterglow/12.webp" target="_blank" rel="noopener" aria-label="Open Growing Afterglow Into a Personalized Healing Platform at full size">
+            <img src="assets/projects/afterglow/12.webp" width="2560" height="1277" alt="Growing Afterglow Into a Personalized Healing Platform" loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </section>
+    </div>
+    <nav class="detail-end" aria-label="Project navigation">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <a class="button" href="persistence-of-memory.html">Next · The Persistence of Memory <span aria-hidden="true">→</span></a>
+    </nav>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>

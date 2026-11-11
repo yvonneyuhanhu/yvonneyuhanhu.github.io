@@ -3,32 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A smart denture care system that combines automated cleaning with a companion app.">
   <meta name="theme-color" content="#f6f5f0">
-  <title>Private portfolio</title>
-  <link rel="stylesheet" href="gate.css">
-  <script src="gate.js" defer></script>
+  <title>Orashell · Yuhan Hu</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="gate" id="gate" aria-labelledby="gate-title">
-    <div class="gate-card">
-      <span class="gate-mark" aria-hidden="true">YH</span>
-      <h1 id="gate-title">Private portfolio</h1>
-      <p>Enter your access password to view the portfolio.</p>
-      <form method="post" id="unlock-form" aria-describedby="unlock-status">
-        <label for="access-password">Password</label>
-        <div class="gate-fields">
-          <input id="access-password" type="password" required
-                 autocomplete="current-password" autocapitalize="none" spellcheck="false">
-          <button id="unlock-button" type="submit" disabled>Unlock <span aria-hidden="true">→</span></button>
-        </div>
-        <p id="unlock-status" role="status" aria-live="polite"></p>
-      </form>
-      <noscript><p>Enable JavaScript in your browser to unlock this portfolio.</p></noscript>
+  <header class="site-header" id="top">
+    <div class="shell">
+      <a class="wordmark" href="index.html">
+        <span class="mark" aria-hidden="true">YH</span> Yuhan Hu
+      </a>
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html#work" aria-current="true">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="for-fun.html">For Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+  <main class="shell">
+    <div class="detail-head">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <div class="detail-title">
+        <h1>Orashell</h1>
+        <div class="detail-meta">
+          <p>Industrial design · 2024</p>
+          <p>Product Designer &amp; Arduino Developer</p>
+        </div>
+        <p class="project-overview">A smart denture care system that combines automated cleaning with a companion app.</p>
+        <ul class="tags" aria-label="Project focus"><li>Arduino</li><li>Wellness</li><li>Hygiene</li></ul>
+        <a class="intro-link" href="#process">View full process <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="pdf-pages case-study" id="process">
+      <figure>
+        <a href="assets/projects/orashell/01.webp" target="_blank" rel="noopener" aria-label="Open Orashell at full size">
+          <img src="assets/projects/orashell/01.webp" width="1185" height="930" alt="Orashell" fetchpriority="high">
+        </a>
+      </figure>
+      <section class="case-section">
+        <h2>Overview</h2>
+        <p>Orashell is a smart denture care system designed specifically for seniors and denture wearers. It combines automated cleaning technology with health monitoring capabilities, tracking bacteria levels, bite strength, and nutrition intake through embedded sensors. The companion mobile app provides real-time feedback and personalized health insights, making denture care effortless and health maintenance proactive.</p>
+      </section>
+      <section class="case-section">
+        <h2>Research</h2>
+        <figure>
+          <a href="assets/projects/orashell/02.webp" target="_blank" rel="noopener" aria-label="Open Research - Why we need denture at full size">
+            <img src="assets/projects/orashell/02.webp" width="1868" height="1058" alt="Research - Why we need denture" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Key Findings</h3>
+        <ul><li>Most people start wearing dentures in their late 40s and early 50s</li><li>Over 60% of those aged above 65 are wearing dentures</li><li>Tooth loss impacts nutrition, quality of life, and social confidence</li><li>Dental implants are costly ($3,000-$5,000 per tooth)</li></ul>
+        <h3>User Insights</h3>
+        <ul><li>Denture cleaning methods are time-consuming</li><li>Inconvenience leads to unbalanced diets</li><li>Fear of dentures being scary to grandchildren</li><li>Diminishing taste perception and eating ability</li></ul>
+      </section>
+      <section class="case-section">
+        <h2>How to Use Orashell</h2>
+        <p>Orashell simplifies denture care with automated cleaning and real-time health monitoring through a mobile app.</p>
+        <h3>Place Dentures</h3>
+        <p>Place dentures in the cleaning case</p>
+        <h3>Rinse Under Water</h3>
+        <p>Run water to wash away large particles</p>
+        <h3>Gentle Brushing</h3>
+        <p>Use soft brush without toothpaste (Optional)</p>
+        <h3>Automatic Cleaning</h3>
+        <p>Water is replaced automatically during cleaning</p>
+        <h3>Cold Storage</h3>
+        <p>Fresh water overnight to prevent drying</p>
+      </section>
+      <section class="case-section">
+        <h2>Prototype &amp; Technical Implementation</h2>
+        <figure>
+          <a href="assets/projects/orashell/03.webp" target="_blank" rel="noopener" aria-label="Open Prototype and circuits at full size">
+            <img src="assets/projects/orashell/03.webp" width="1676" height="944" alt="Prototype and circuits" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Sensors</h3>
+        <p>• Nutrition Tracking Sensor<br>• Biting Strength Sensor<br>• Pressure Sensor<br>• Bacteria Sensor<br>• Ultrasonic Sensor</p>
+        <h3>Actuators</h3>
+        <p>• 3-way Pump (water control)<br>• Servo Motor (lid control)<br>• Ultrasonic Motor (cleaning)<br>• LED Strip (progress indicator)</p>
+        <h3>Mobile App</h3>
+        <p>• Real-time bacteria monitoring<br>• Nutrition tracking graphs<br>• Biting strength analysis<br>• Cleaning progress alerts</p>
+      </section>
+      <section class="case-section">
+        <h2>Final Design</h2>
+        <figure>
+          <a href="assets/projects/orashell/04.webp" target="_blank" rel="noopener" aria-label="Open Final design and app interface at full size">
+            <img src="assets/projects/orashell/04.webp" width="1734" height="976" alt="Final design and app interface" loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <h3>Product Features</h3>
+        <ul><li>🦷<strong>Smart Denture Case:</strong>
+         Embedded with bite force sensor and nutrition tracking sensor</li><li>💧<strong>Automatic Cleaning:</strong>
+         LED strip shows progress, ultrasonic motor for deep cleaning</li><li>🔬<strong>Health Monitoring:</strong>
+         PIR sensor detects bacteria presence, pressure and bacteria sensors in control board</li><li>🌊<strong>Water Management:</strong>
+         3-way pump controls water flow, discharge pipe, water inlet pipe</li></ul>
+        <h3>App Features</h3>
+        <ul><li>📱<strong>Landing Page:</strong>
+         Quick access to cleaning status and health metrics</li><li>🩺<strong>Diet Tracking:</strong>
+         Nutrition intake analysis and food recommendations</li><li>💪<strong>Biting Strength:</strong>
+         Track bite force over time with visual graphs</li><li>🍽️<strong>Food Scanning:</strong>
+         AI-powered food recognition for nutrition logging</li></ul>
+      </section>
+      <section class="case-section">
+        <h2>Design Philosophy</h2>
+        <p><strong>Ergonomic and Functional Design Ensuring Seamless Denture Care and Hygiene.</strong></p>
+        <p>The shell-shaped design creates a sense of treasure and protection, while the ergonomic form ensures comfortable handling for elderly users. The soft blue color provides a calming aesthetic that fits naturally in bathroom environments. Every component is carefully designed for ease of use, from the automatic lid control to the intuitive LED progress indicators, making advanced health monitoring accessible to all users regardless of technical expertise.</p>
+      </section>
+      <section class="case-section">
+        <h2>Impact &amp; Future Vision</h2>
+        <h3>Current Impact</h3>
+        <ul><li>Simplifies daily denture maintenance routine</li><li>Provides health insights previously unavailable to denture wearers</li><li>Reduces risk of bacterial infections through proper cleaning</li><li>Helps maintain nutritional health through tracking</li></ul>
+        <h3>Future Development</h3>
+        <ul><li>→ Integration with healthcare providers for remote monitoring</li><li>→ AI-powered dietary recommendations based on bite strength</li><li>→ Community features for sharing recipes and tips</li><li>→ Predictive maintenance alerts for denture replacement</li></ul>
+      </section>
+    </div>
+    <nav class="detail-end" aria-label="Project navigation">
+      <a class="back" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+      <a class="button" href="serene.html">Next · Serene <span aria-hidden="true">→</span></a>
+    </nav>
   </main>
-  <iframe id="portfolio" title="Portfolio" hidden></iframe>
-  <button id="lock-button" type="button" hidden>Lock</button>
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="mono footer-note">Yuhan Hu / Portfolio 2027</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="pointer.js" defer></script>
 </body>
 </html>
