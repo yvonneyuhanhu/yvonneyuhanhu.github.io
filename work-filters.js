@@ -3,11 +3,16 @@ const filters = work.querySelector('.work-filters');
 const filterButtons = filters.querySelectorAll('button');
 const projectCards = work.querySelectorAll('.project-card');
 const workGroups = work.querySelectorAll('[data-work-group]');
+const mainGrid = work.querySelector('.project-grid');
+const earlierGrid = work.querySelector('section[data-work-group] .project-grid');
+const earlierCards = earlierGrid.querySelectorAll('.project-card');
 const workStatus = document.getElementById('work-status');
 
 for (const button of filterButtons) {
   button.addEventListener('click', () => {
     const category = button.dataset.category;
+    const destination = category === 'all' ? earlierGrid : mainGrid;
+    destination.append(...earlierCards);
 
     for (const card of projectCards) {
       card.hidden = category !== 'all' && !card.dataset.categories.split(' ').includes(category);
