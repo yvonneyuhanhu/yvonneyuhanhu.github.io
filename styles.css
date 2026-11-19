@@ -156,6 +156,25 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
 .section-heading :is(h2, h3) { font-size: clamp(23px, 3vw, 32px); line-height: 1; letter-spacing: -.04em; }
 .work, #process { scroll-margin-top: calc(var(--header-height) + 14px); }
 
+.work-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.work-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.work-filters button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--rule);
+  border-radius: 24px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.work-filters button:hover { border-color: var(--blue); color: var(--blue); }
+.work-filters button[aria-pressed="true"] { border-color: var(--blue); background: var(--blue); color: var(--white); }
+.work-filters button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.work-filters[hidden], .project-card[hidden], [data-work-group][hidden] { display: none; }
+.work-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
