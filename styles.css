@@ -196,15 +196,6 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
   .project-card:hover .card-image { transform: translateY(-6px) rotate(.65deg); }
   .project-card:hover img { transform: scale(1.035); }
 }
-.card-index {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  color: var(--ink);
-  background: var(--canvas);
-  border-radius: 5px;
-  padding: 4px 8px;
-}
 .card-body {
   display: flex;
   align-items: flex-start;
